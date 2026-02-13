@@ -1,23 +1,15 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Para sa'yo</title>
-  <style>
-    body { background: #f0e6ff; font-family: 'Arial'; text-align: center; }
-    .song-player { margin-top: 50px; }
-    button { background: #e8c4ff; padding: 15px 30px; border: none; cursor: pointer; font-size: 18px; }
-  </style>
-</head>
-<body>
-  <h1>Para sa'yo,yayang 🫶</h1>
-  <div class="song-player">
-    <button onclick="playSong()">play kahit ilang papel</button>
-  </div>
-  <script>
-    function playSong() {
-      const audio = new Audio(''); // Replace with your file
-      audio.play();
-    }
-  </script>
-</body>
-</html>
+<html><head><title>❤️</title><style>body{margin:0;background:#ffe6ea;text-align:center;padding-top:100px;font-family:Arial;}#b{background:#d63384;color:#fff;padding:15px 30px;font-size:20px;border:none;border-radius:30px;cursor:pointer;}#s{display:none;font-size:35px;color:#d63384;}@keyframes f{to{transform:translateY(800px);opacity:0;}}</style></head><body>
+<button id="b" onclick="s()">Click Me ❤️</button>
+<div id="s">I LOVE YOU!<br><span id="h">❤️</span></div>
+<script>
+function s(){
+document.getElementById('b').remove();
+document.getElementById('s').style.display='block';
+document.getElementById('h').style.transform='scale(3)';
+setTimeout(()=>{for(i=0;i<30;i++){
+let c=document.createElement('div');
+c.innerText='❤️';c.style.cssText=`position:absolute;left:${Math.random()*100}%;top:-20px;font-size:20px;animation:f ${Math.random()*3+2}s linear`;
+document.body.appendChild(c);}},500);
+}
+</script></body></html>
